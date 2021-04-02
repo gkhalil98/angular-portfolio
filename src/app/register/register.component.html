@@ -1,0 +1,14 @@
+<div class="container">
+    <h1>Register</h1>
+    <form (ngSubmit)="onRegister(registerForm)" #registerForm="ngForm">
+        <label>Name</label>
+        <input type="text" name="name" ngModel required/><br/>
+        <label>Username</label>
+        <input type="text" name="username" ngModel required minlength="2"/><br/>
+        <label>Password</label>
+        <input type="password" name="password" ngModel required pattern="TCS\D{3}"/><br/>
+        <input type="submit" value="submit"/>
+        <input type="reset" value="reset"/>
+    </form>
+</div>
+
